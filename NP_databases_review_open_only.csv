@@ -1,0 +1,56 @@
+Database name,NP type,Number of unique molecules with correct structure,Is maintained,Is updated,Has metadata,Link,Most recent publication (DOI)
+AfroCancer,"tm, plants, africa",365,NA,no,no,NA,https://doi.org/10.1021/ci5003697
+AfroDB,"tm, plants, africa",874,no,no,no,https://zinc.docking.org/catalogs/afronp,doi.org/10.1371/journal.pone.0078085
+AfroMalariaDB,"tm, plants, africa",252,NA,no,no,NA,doi.org/10.1186/s13588-014-0006-x
+AnalytiCon Discovery,"bacteria, plants, industrial",4908,yes,yes,no,https://ac-discovery.com/screening-libraries/,x
+BIOFAQUIM,"plant, fungi, america",400,yes,yes,yes,https://biofacquim.herokuapp.com,doi.org/10.3390/biom9010031
+BitterDB,food,631,yes,yes,yes,http://bitterdb.agri.huji.ac.il/dbbitter.php,"doi.org/10.1093/nar/gky974
+"
+Carotenoids Database,structure,991,yes,yes,yes,http://carotenoiddb.jp,doi.org/10.1093/database/bax004
+ChEBI,chemicals,14621,yes,yes,yes,https://www.ebi.ac.uk/chebi/,doi.org/10.1093/nar/gkv1031
+ChEMBL,chemicals,1581,yes,yes,no,https://www.ebi.ac.uk/chembl/,doi.org/10.1093/nar/gkw1074
+ChemSpider,chemicals,9029,yes,yes,no,http://www.chemspider.com,doi.org/10.1021/ed100697w
+CMAUP,plants,20873,yes,no,yes,http://bidd2.nus.edu.sg/CMAUP/,doi.org/10.1093/nar/gky965
+ConMedNP,"plants, tm, africa",2504,NA,NA,no,NA,doi.org/10.1039/C3RA43754J
+Drugbank NPs,drug-like,2617,yes,yes,yes,https://www.drugbank.ca/drugs?utf8=✓&approved=1&nutraceutical=1&filter=true,doi.org/10.1093/nar/gkx1037
+ETM-DB,"tm, plants, africa",1653,yes,yes,yes,http://biosoft.kaist.ac.kr/etm/home.php/,doi.org/10.1186/s12906-019-2634-1
+FooDB,food,22223,yes,yes,yes,http://foodb.ca,x
+GNPS,dereplication,6708,yes,yes,no,https://gnps.ucsd.edu/,doi.org/10.1038/nbt.3597
+HIM,"drug-like, tm, plants",962,no,no,unknown,"http://zinc.docking.org/catalogs/himnp
+http://58.40.126.120:8080/him/","doi.org/10.1186/1758-2946-5-28
+
+"
+HIT,"drug-like, tm, plants",472,no,no,unknown,"zinc.docking.org/catalogs/hitnp
+lifecenter.sgst.cn/hit",doi.org/10.1093/nar/gkq1165
+Indofine Chemical Company,"generalistic, industrial",46,yes,,no,http://www.indofinechemical.com,x
+InflamNat,drug-like,536,NA,NA,yes,NA,doi.org/10.1021/acs.jcim.8b00560
+InPACdb,"drug-like, plants, asia",121,no,no,unknown,http://www.inpacdb.org/,doi.org/10.6026/97320630004071
+InterBioScreen Ltd,"generalistic, industrial",67292,yes,yes,no,https://www.ibscreen.com/natural-compounds,x
+KNApSaCK,plants,8887,yes,yes,yes,http://www.knapsackfamily.com,doi.org/10.1093/pcp/pcs186
+Lichen Database,fungi,156,yes,no,yes,https://www.ebi.ac.uk/metabolights/MTBLS999,x
+Mitishamba database,"plants, africa",1010,yes,no,yes,http://mitishamba.uonbi.ac.ke,x
+NANPDB,"plants, africa",3913,yes,yes,no,http://african-compounds.org/about/nanpdb/,doi.org/10.1021/acs.jnatprod.7b00283
+NCI DTP data,drug-like,404,yes,no,no,https://wiki.nci.nih.gov/display/NCIDTPdata/Compound+Sets,x
+NPACT,"plants, drug-like",1453,yes,yes,no,http://crdd.osdd.net/raghava/npact/,doi.org/10.1093/nar/gks1047
+NPASS,"plants, bacteria, metazoa, fungi",27479,yes,yes,yes,http://bidd2.nus.edu.sg/NPASS/,doi.org/10.1093/nar/gkx1026
+NPAtlas,"bacteria, fungi",18959,yes,yes,yes,https://www.npatlas.org,x
+NPCARE,"plants, marine, bacteria, drug-like",1364,yes (server fails sometimes),yes,no but contains impact of NPs on different cancer tissues and associated genes,http://silver.sejong.ac.kr/npcare/,doi.org/10.1186/s13321-016-0188-5
+NPEdia,generalistic,16190,yes,no,yes,http://www.cbrg.riken.jp/npedia/?LANG=en,doi.org/10.2751/jcac.7.157
+NuBBEDB,"plants, insects, america",2022,yes,,no,https://nubbe.iq.unesp.br/portal/nubbe-search.html, doi.org/10.1038/s41598-017-07451-x
+p-ANAPL ,"plants, africa",467,NA,,no,NA,doi.org/10.1371/journal.pone.0090655
+Phenol-explorer,food,681,yes,NA,yes,http://phenol-explorer.eu,doi.org/10.1093/database/bat070
+PubChem,chemicals,2835,yes,yes,no,https://pubchem.ncbi.nlm.nih.gov,doi.org/10.1093/nar/gkv951
+ReSpect,dereplication,711,yes,no,yes,http://spectra.psc.riken.jp,doi.org/10.1016/j.phytochem.2012.07.007
+SANCDB,"plants, africa",592,yes,yes,yes,https://sancdb.rubi.ru.ac.za,doi.org/10.1186/s13321-015-0080-8
+SWMD,marine,423,yes,no,yes,http://www.swmd.co.in/,doi.org/10.6026/97320630005361
+Specs Natural Products,"generalistic, industrial",745,yes,no,no,https://zinc.docking.org/catalogs/specsnp,x
+Spektraris NMR,dereplication,242,yes,no,no,http://langelabtools.wsu.edu/nmr/,doi.org/10.1016/j.phytochem.2014.11.020
+StreptomeDB,bacteria,3610,yes,no,yes,http://132.230.56.4/streptomedb2/,doi.org/10.1093/nar/gkv1319
+Super Natural II,generalistic,235436,yes,no,no,http://bioinf-applied.charite.de/supernatural_new/index.php,doi.org/10.1093/nar/gku886
+TCMDB@Taiwan,"tm, asia, plants",50891,yes (server fails sometimes),yes,no,http://tcm.cmu.edu.tw,doi.org/10.1371/journal.pone.0015939
+TCMID,"tm, asia, plants",10572,yes,no,yes (but difficutl to extract),http://www.megabionet.org/tcmid/,doi.org/10.1093/nar/gks1100
+TIPdb,"asia, plants, drug-like",7752,yes,no,no,https://cwtung.kmu.edu.tw/tipdb/,doi.org/10.1093/database/bau055
+TPPT,"plants, toxins, europe",1486,yes,no,yes,https://www.agroscope.admin.ch/agroscope/en/home/publications/apps/tppt.html,doi.org/10.1021/acs.jafc.8b01639
+UEFS,"plants, america",481,no,no,no,http://zinc.docking.org/catalogs/uefsnp,x
+UNPD,generalistic,156984,no,no,no,http://oolonek.github.io/ISDB/,doi.org/10.1371/journal.pone.0062839
+ZINC NP,generalistic,67336,yes,yes,no,http://zinc15.docking.org/substances/subsets/,doi.org/10.1021/acs.jcim.5b00559
