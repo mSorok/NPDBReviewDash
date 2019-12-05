@@ -1,0 +1,26 @@
+version: '3.2'
+
+services:
+
+  dash:
+    container_name: npreview_dash
+    restart: always
+    build: '.'
+    ports:
+      - "8000:8000"
+    command: gunicorn -w 1 -b :8000 app:server
+    environment:
+      VIRTUAL_HOST: npreview.naturalproducts.net
+      VIRTUAL_PORT: 8090
+      LETSENCRYPT_HOST: npreview.naturalproducts.net
+      LETSENCRYPT_EMAIL: maria.ssorokina@gmail.com
+    volumes:
+      - ./archive:/archive
+      - ./assets:/assets
+
+
+
+networks:
+ default:
+    external:
+      name: nginx-proxy

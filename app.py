@@ -8,7 +8,6 @@ import pickle
 import math
 import dash_cytoscape as cyto
 import dash_table
-import plotly.graph_objs as go
 
 
 ##############
@@ -16,14 +15,25 @@ import plotly.graph_objs as go
 
 markdown_text_1 = '''
 Explore the relationships and the diversity of Natural Products (NP) datasets.
-Data available at [Zenodo](https://zenodo.org/record/3547718#.XeZCMZJKiu4) 
+Data available at [Zenodo](https://zenodo.org/record/3547718#.XeZCMZJKiu4).
+
+Created and maintained by M. Sorokina @ [SteinbeckLab](https://cheminf.uni-jena.de/)
 '''
 
 markdown_text_2 = '''
-Select the molecular descriptor in the dropdown menu. 
+The desired molecular descriptor, among 19 available, to visualise can be selected in the dropdown menu. 
+
 Only few databases are displayed by default, others can be selected by scrolling and clicking on the database menu on the right of the plot.
 '''
 
+markdown_text_3 = '''
+
+This network reflects the overlap between the Natural Product open databases in terms of content similarity. 
+There is a directed edge between database A and database B if more than the selected percent of the unique molecules from database A are present in database B. 
+The node size is proportional to the number of molecules in the database.
+
+The slider on the top of the network allows to select the desired percentage of similarity.
+'''
 
 
 ##############
@@ -120,7 +130,7 @@ def create_hist_fig(file_with_path):
     figs = []
 
     for dbname in dict_hists.keys():
-        if dbname not in ["supernatural2", "cmaup", "zinc_np"]:
+        if dbname not in ["supernatural2", "cmaup", "zinc_np", "unpd"]:
             one_line = dict(
                 x=dict_hists[dbname][1],
                 y=dict_hists[dbname][0],
@@ -128,7 +138,7 @@ def create_hist_fig(file_with_path):
                 name=dbname,
                 mode='lines',
                 visible= 'legendonly',
-                line={'shape': 'spline', 'smoothing': 1.7}
+                line={'shape': 'spline', 'smoothing': 2}
                 #opacity=0.7,
             )
             figs.append(one_line)
@@ -241,6 +251,8 @@ app.layout = html.Div(children=[
     html.Div(className="pretty_container", children=[
         html.H4(children='Overlap network between the NP datasets'),
 
+        dcc.Markdown(children=markdown_text_3),
+
         dcc.Slider(
             id='slider-for-cytoscape',
             min=10,
@@ -254,16 +266,17 @@ app.layout = html.Div(children=[
             layout={
                 'name': 'random'
             },
-            style={'width': '100%', 'height': '600px'},
+            style={'width': '100%', 'height': '800px'},
             stylesheet=create_cytoscape_stylesheet(),
             elements=read_network_data()
         ),
 
     ]),
 
-    html.Div(className="pretty_container",children=[
+    html.Div(className="pretty_container", children=[
 
-    html.H4(children='List of NP datasets and their caracteristics'),
+    html.H4(children='List of NP datasets and their characteristics'),
+
 
         dash_table.DataTable(
             id='np-db-table',
@@ -282,7 +295,6 @@ app.layout = html.Div(children=[
             columns=[{"name": i, "id": i} for i in df.columns],
             data=df.to_dict('records'),
             fixed_rows={'headers': True, 'data': 0},
-            fixed_columns={ 'headers': True, 'data': 0},
 
         )
     ]),
@@ -321,4 +333,4 @@ def update_cytoscape_visible_edges(selected_value):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host="0.0.0.0")
+    app.run_server(debug=True, host="0.0.0.0", port=8000)
